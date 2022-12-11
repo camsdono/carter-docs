@@ -20,13 +20,15 @@ Now you want to chat with your agent right? This is pretty simple as Carter agen
 
 {% code lineNumbers="true" %}
 ```csharp
+using UnityEngine;
 using UnityEngine.Networking;
+using System.Collections;
 
 ...
 
 WWWForm form = new WWWForm();
-form.AddField("aquery", "YOUR MESSAGE TO CARTER!);
-form.AddField("api_key", "YOUR-API-KEY);
+form.AddField("aquery", "YOUR MESSAGE TO CARTER!");
+form.AddField("api_key", "YOUR-API-KEY");
 form.AddField("uuid", "USER-ID");
 form.AddField("scene", "level-1"); //optional!
 
